@@ -1,13 +1,26 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function NavBar() {
   // State to toggle mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [navBackground, setNavBackground] = useState("bg-transparent");
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setNavBackground("bg-white shadow-md");
+      } else {
+        setNavBackground("bg-transparent");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("click", handleScroll);
+  }, []);
   return (
-    <nav className="bg-white shadow-md fixed w-full z-10">
+    <nav
+      className={`${navBackground} fixed w-full z-10 transition-all duration-300`}
+    >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-600">

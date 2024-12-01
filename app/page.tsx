@@ -9,6 +9,7 @@ import Divisions from "./components/Divisions";
 import Events from "./components/Events";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhyJoin from "./components/WhyJoin";
 
 export default function Home() {
   return (
@@ -16,9 +17,10 @@ export default function Home() {
       <main>
         <div className="w-full min-h-screen  bg-[#f3f3eb] text-[#171717]">
           <NavGpt />
-          <HeroGpt />
+          <Hero />
           <AboutGpt />
           <Divisions />
+          <WhyJoin />
           <Events />
           <Contact />
           <Footer />
