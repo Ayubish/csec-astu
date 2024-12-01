@@ -1,3 +1,5 @@
+import { GiBullseye } from "react-icons/gi";
+
 export default function About() {
   return (
     <div className="w-full container mx-auto p-[5%]">
@@ -18,7 +20,7 @@ export default function About() {
       {/* Mission Vision and Values */}
       <div className="flex gap-5 shadow-xl">
         <div className="bg-[#fff] p-5 box w-1/3 relative rounded-lg ">
-          <p className="text-center text-5xl font-bold">M</p>
+          <GiBullseye size={50} className="text-center text-blue-500" />
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Mission
           </p>
