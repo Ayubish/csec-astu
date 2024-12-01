@@ -1,14 +1,15 @@
-import { GiBullseye } from "react-icons/gi";
+import { FaHandshake, FaUsersGear } from "react-icons/fa6";
+import { GiBullseye, GiLightBulb } from "react-icons/gi";
 
 export default function About() {
   return (
-    <div className="w-full container mx-auto p-[5%]">
+    <div className="px-[5%]">
       <div className="text-center">
-        <p className="relative inline-block mb-5 text-white text-2xl font-bold box px-0 py-1 bg-[#fcc018]">
+        <p className="relative inline-block mb-5 text-white text-2xl font-bold bg-[#fcc018]">
           Who We Are
         </p>
       </div>
-      <p>
+      <p className="max-w-[900px] mx-auto">
         Computer Science and Engineering Club at ASTU (CSEC ASTU) is a
         student-driven intiative dedicated to advancing knowledge, fostering
         innovation, and building practical skills in the field of computer
@@ -18,9 +19,12 @@ export default function About() {
       </p>
 
       {/* Mission Vision and Values */}
-      <div className="flex gap-5 shadow-xl">
-        <div className="bg-[#fff] p-5 box w-1/3 relative rounded-lg ">
-          <GiBullseye size={50} className="text-center text-blue-500" />
+      <div className="flex gap-5 mt-5">
+        <div className="bg-[#fff] p-5 w-1/3 relative rounded-lg ">
+          <FaUsersGear
+            size={50}
+            className="text-center justify-self-center text-blue-500"
+          />
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Mission
           </p>
@@ -31,8 +35,11 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-[#fff] p-5 box w-1/3">
-          <p className="text-center text-5xl font-bold">Q</p>
+        <div className="bg-[#fff] p-5 w-1/3">
+          <GiLightBulb
+            size={50}
+            className="text-center justify-self-center text-indigo-500"
+          />
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Vision
           </p>
@@ -42,8 +49,11 @@ export default function About() {
             cybersecurity, data science, and development.
           </p>
         </div>
-        <div className="bg-[#fff] p-5 box w-1/3">
-          <p className="text-center text-5xl font-bold">V</p>
+        <div className="bg-[#fff] p-5 w-1/3">
+          <FaHandshake
+            size={50}
+            className="text-center justify-self-center text-yellow-500"
+          />
           <p className="border-b text-2xl py-3 font-bold text-center">Values</p>
           <p>
             <b>Innovation:</b> We embrace creativity and encourage

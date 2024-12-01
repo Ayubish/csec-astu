@@ -14,7 +14,7 @@ export default function Hero() {
           problem-solvers at ASTU.
         </p>
       </div>
-      <div className="relative w-1/2 h-auto box flow-right">
+      <div className="relative w-1/2 h-auto">
         <Image
           src={"/battle-with-brain.jpg"}
           layout="responsive"
