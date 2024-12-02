@@ -2,29 +2,29 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function NavBar() {
+export default function NavGpt() {
   // State to toggle mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [navBackground, setNavBackground] = useState("bg-transparent");
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setNavBackground("bg-white shadow-md");
-      } else {
-        setNavBackground("bg-transparent");
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("click", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 40) {
+  //       setNavBackground("bg-white shadow-md");
+  //     } else {
+  //       setNavBackground("bg-transparent");
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("click", handleScroll);
+  // }, []);
   return (
-    <nav
-      className={`${navBackground} fixed w-full z-10 transition-all duration-300`}
-    >
+    <nav className={`bg-white w-full z-10 transition-all duration-300`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-blue-600">
-          <Link href="/">CSEC ASTU</Link>
+          <Link href="/">
+            <img src="/csec-logo.jpg" alt="CSEC ASTU" className="w-12 h-12" />
+          </Link>
         </div>
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 text-gray-700">

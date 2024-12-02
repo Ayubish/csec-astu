@@ -24,7 +24,7 @@ h1 {
   @apply inline-block;
 }
 
-.box::after {
+.box::before {
   content: "";
   width: 100%;
   height: 100%;

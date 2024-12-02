@@ -26,14 +26,14 @@ export default function EventsPage() {
       date: "January 10, 2025",
       location: "Main Auditorium, ASTU",
       description: "A 48-hour hackathon for tackling real-world challenges.",
-      image: "/images/hackathon.jpg",
+      image: "zoro.png",
     },
     {
       title: "Data Science Bootcamp",
       date: "January 20, 2025",
       location: "Room 305, Computer Science Building",
       description: "Learn the fundamentals of data analysis and visualization.",
-      image: "/images/data-science.jpg",
+      image: "/zoro.png",
     },
   ];
 
@@ -42,19 +42,19 @@ export default function EventsPage() {
       title: "Intro to Python Programming",
       date: "November 1, 2024",
       location: "Room 204, Computer Science Building",
-      image: "/images/python-intro.jpg",
+      image: "zoro.png",
     },
     {
       title: "CTF Challenge: Cybersecurity Special",
       date: "October 15, 2024",
       location: "Innovation Lab, ASTU",
-      image: "/images/ctf-challenge.jpg",
+      image: "zoro.png",
     },
     {
       title: "AI and Ethics Seminar",
       date: "September 30, 2024",
       location: "Lecture Hall 2, ASTU",
-      image: "/images/ai-ethics.jpg",
+      image: "/zoro.png",
     },
   ];
 
@@ -93,12 +93,12 @@ export default function EventsPage() {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="flex gap-5 bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-40 object-cover"
+                  className="w-2/5 h-full object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold text-blue-600 mb-2">
@@ -122,12 +122,12 @@ export default function EventsPage() {
             {pastEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="flex gap-5 bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-40 object-cover"
+                  className="w-2/5 h-auto object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold text-blue-600 mb-2">
