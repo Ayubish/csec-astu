@@ -34,12 +34,12 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href="#divisions" className="hover:text-blue-600">
-              Divisions
+            <Link href="/teams" className="hover:text-blue-600">
+              Executives
             </Link>
           </li>
           <li>
-            <Link href="#events" className="hover:text-blue-600">
+            <Link href="/events" className="hover:text-blue-600">
               Events
             </Link>
           </li>

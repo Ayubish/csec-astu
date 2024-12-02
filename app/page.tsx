@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <main>
-        <div className="w-full min-h-screen  bg-[#f3f3eb] text-[#171717]">
+        <div className="w-full min-h-screen bg-[#f3f3eb] text-[#171717]">
           <NavGpt />
           <Hero />
           <AboutGpt />
