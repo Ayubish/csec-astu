@@ -17,13 +17,14 @@ export default function Home() {
       <main>
         <div className="w-full min-h-screen bg-[#f3f3eb] text-[#171717]">
           <Hero />
-          <AboutGpt />
+          <About />
           <Divisions />
           <WhyJoin />
           <Events />
           <Contact />
           <Footer />
         </div>
+        l
       </main>
     </div>
   );

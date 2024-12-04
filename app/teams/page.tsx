@@ -4,7 +4,7 @@ export default function TeamPage() {
   // Dummy data for team members
   const teamMembers = [
     {
-      name: "John Doe",
+      name: "Kiya Kebe",
       role: "President",
       image: "/zoro.png",
       social: {
@@ -27,6 +27,8 @@ export default function TeamPage() {
       image: "/zoro.png",
       social: {
         github: "https://github.com/alexjohnson",
+        linkedin: "https://linkedin.com/in/emily-carter",
+        twitter: "https://twitter.com/janesmith",
       },
     },
     {
@@ -34,6 +36,9 @@ export default function TeamPage() {
       role: "Treasurer",
       image: "/zoro.png",
       social: {
+        github: "https://github.com/alexjohnson",
+        twitter: "https://twitter.com/janesmith",
+
         linkedin: "https://linkedin.com/in/emily-carter",
       },
     },

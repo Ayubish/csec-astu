@@ -1,21 +1,111 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import {
+  FaBars,
+  FaGithub,
+  FaLinkedin,
+  FaMoon,
+  FaTelegram,
+  FaXmark,
+} from "react-icons/fa6";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [navHeight, setNavHeight] = useState("translate-x-96");
   return (
-    <div className="flex w-full absolute left-0 right-0 top-0 justify-between p-3">
-      <div className="relative rounded w-10 h-10">
-        <Image src="/csec-logo.jpg" alt="CSEC ASTU" fill={true} />
+    <div className="flex w-full z-50 fixed left-0 right-0 top-0 justify-between items-center lg:px-14 px-5 py-4 bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] ">
+      <div className="relative rounded w-2/5">
+        <Image src="/csec-logo.jpg" width={40} height={40} alt="CSEC ASTU" />
       </div>
-      <div className="flex gap-3 text-xl ">
-        <button>Home</button>
-        <button>Divisions</button>
-        <button>Events</button>
-        <button>Leads</button>
-        <button>Sponsors</button>
+      <div className="flex gap-3 text-xl max-lg:hidden">
+        <Link href="/">
+          <button>Home</button>
+        </Link>
+
+        <Link href="/events">
+          <button>Events</button>
+        </Link>
+        <Link href="teams">
+          <button>Executives</button>
+        </Link>
+        <Link href="/sponsors">
+          <button>Sponsors</button>
+        </Link>
+        <Link href="/contact">
+          <button>Contact Us</button>
+        </Link>
       </div>
-      <button className="py-2 px-4 rounded-3xl text-black border">
-        Join CSEC ASTU
-      </button>
+      <div className="flex gap-3 text-[#171717] max-md:hidden">
+        <a href="https://t.me/csec_astu">
+          <FaTelegram size={24} />
+        </a>
+        <a href="https://t.me/csec_astu">
+          <FaGithub size={24} />
+        </a>
+        <a href="https://t.me/csec_astu">
+          <FaLinkedin size={24} />
+        </a>
+        <button className="border-l-2 pl-3">
+          <FaMoon size={24} />
+        </button>
+      </div>
+      {/* Mobile Menu */}
+      <div className="lg:hidden transition-all duration-300">
+        {menuOpen ? (
+          <FaXmark
+            size={24}
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              setNavHeight("translate-x-96");
+            }}
+          />
+        ) : (
+          <FaBars
+            size={24}
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              setNavHeight("translate-x-0");
+            }}
+          />
+        )}
+
+        <div
+          className={`flex flex-col -z-20 transition-all duration-1000 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
+        >
+          <Link href="/">
+            <button>Home</button>
+          </Link>
+
+          <Link href="/events">
+            <button>Events</button>
+          </Link>
+          <Link href="teams">
+            <button>Executives</button>
+          </Link>
+          <Link href="/sponsors">
+            <button>Sponsors</button>
+          </Link>
+          <Link href="/contact">
+            <button>Contact Us</button>
+          </Link>
+          <div className="flex gap-3 text-[#171717] border-t mt-20 pt-5">
+            <a href="https://t.me/csec_astu">
+              <FaTelegram size={24} />
+            </a>
+            <a href="https://t.me/csec_astu">
+              <FaGithub size={24} />
+            </a>
+            <a href="https://t.me/csec_astu">
+              <FaLinkedin size={24} />
+            </a>
+            <button className="border-l-2 pl-3">
+              <FaMoon size={24} />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

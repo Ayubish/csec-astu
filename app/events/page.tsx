@@ -4,19 +4,19 @@ export default function EventsPage() {
   // Dummy data for events
   const weeklyEvents = [
     {
-      title: "Algorithm Study Group",
-      day: "Every Monday",
-      time: "6:00 PM - 8:00 PM",
+      title: "Weekly Contest",
+      day: "Every Tuesday",
+      time: "8:00 PM - 10:00 PM",
     },
     {
-      title: "Cybersecurity Lab",
+      title: "Contest Analysis",
       day: "Every Wednesday",
-      time: "5:00 PM - 7:00 PM",
+      time: "8:00 PM - 10:00 PM",
     },
     {
-      title: "Web Development Workshop",
-      day: "Every Friday",
-      time: "4:00 PM - 6:00 PM",
+      title: "Tutorial",
+      day: "Every Saturday",
+      time: "2:00 PM - 4:00 PM",
     },
   ];
 

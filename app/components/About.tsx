@@ -19,12 +19,14 @@ export default function About() {
       </p>
 
       {/* Mission Vision and Values */}
-      <div className="flex gap-5 mt-5">
-        <div className="bg-[#fff] p-5 w-1/3 relative rounded-lg ">
-          <FaUsersGear
-            size={50}
-            className="text-center justify-self-center text-blue-500"
-          />
+      <div className="flex max-lg:flex-col justify-between gap-5 mt-5">
+        <div className="bg-[#fff] p-5 relative rounded-lg ">
+          <div className="p-1 rounded-full inline-block justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
+            <FaUsersGear
+              size={50}
+              className="text-center justify-self-center text-blue-500 bg-white rounded-full p-2"
+            />
+          </div>
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Mission
           </p>
@@ -35,7 +37,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-[#fff] p-5 w-1/3">
+        <div className="bg-[#fff] p-5">
           <GiLightBulb
             size={50}
             className="text-center justify-self-center text-indigo-500"
@@ -49,7 +51,7 @@ export default function About() {
             cybersecurity, data science, and development.
           </p>
         </div>
-        <div className="bg-[#fff] p-5 w-1/3">
+        <div className="bg-[#fff] p-5">
           <FaHandshake
             size={50}
             className="text-center justify-self-center text-yellow-500"
