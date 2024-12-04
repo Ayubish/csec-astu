@@ -6,25 +6,25 @@ export default function TeamPage() {
     {
       name: "Kiya Kebe",
       role: "President",
-      image: "/zoro.png",
+      image: "/kiya-kebe-2024.jpg",
       social: {
         linkedin: "https://linkedin.com/in/john-doe",
         github: "https://github.com/johndoe",
       },
     },
     {
-      name: "Jane Smith",
+      name: "Nebiyu Musbah",
       role: "Vice President",
-      image: "/zoro.png",
+      image: "/nebiyu-musbah-2024.jpg",
       social: {
         twitter: "https://twitter.com/janesmith",
         linkedin: "https://linkedin.com/in/jane-smith",
       },
     },
     {
-      name: "Alex Johnson",
-      role: "Secretary",
-      image: "/zoro.png",
+      name: "Abdi Esayas",
+      role: "Competetive Programming Dividion Head",
+      image: "/abdi-esayas-2024.jpg",
       social: {
         github: "https://github.com/alexjohnson",
         linkedin: "https://linkedin.com/in/emily-carter",
@@ -32,9 +32,20 @@ export default function TeamPage() {
       },
     },
     {
-      name: "Emily Carter",
-      role: "Treasurer",
-      image: "/zoro.png",
+      name: "Fasil Hawulite",
+      role: "Development Division Head",
+      image: "/fasil-hawulite-2024.jpg",
+      social: {
+        github: "https://github.com/alexjohnson",
+        twitter: "https://twitter.com/janesmith",
+
+        linkedin: "https://linkedin.com/in/emily-carter",
+      },
+    },
+    {
+      name: "Abdulaziz Isa",
+      role: "Capacity Building Division Head",
+      image: "/abdulaziz-isa-2024.jpg",
       social: {
         github: "https://github.com/alexjohnson",
         twitter: "https://twitter.com/janesmith",

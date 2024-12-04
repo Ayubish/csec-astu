@@ -1,4 +1,5 @@
 import { FaCalendarAlt, FaClock, FaHistory } from "react-icons/fa";
+import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
 
 export default function EventsPage() {
   // Dummy data for events
@@ -22,11 +23,12 @@ export default function EventsPage() {
 
   const upcomingEvents = [
     {
-      title: "Hackathon 2024",
-      date: "January 10, 2025",
-      location: "Main Auditorium, ASTU",
-      description: "A 48-hour hackathon for tackling real-world challenges.",
-      image: "zoro.png",
+      title: "CTF Night",
+      date: "December 09, 2024",
+      location: "B508, R10, ASTU",
+      description:
+        "Are you ready to put your hacking skills to the test and solve the challenges? Join us for a CTF Night exclusively for all ASTU students! 🔐✨",
+      image: "/ctf-night-dec-2024.jpg",
     },
     {
       title: "Data Science Bootcamp",
@@ -39,22 +41,45 @@ export default function EventsPage() {
 
   const pastEvents = [
     {
-      title: "Intro to Python Programming",
-      date: "November 1, 2024",
-      location: "Room 204, Computer Science Building",
-      image: "zoro.png",
+      title: "Ace The A2SV Interview",
+      date: "November 25, 2024",
+      description:
+        "Join us this Monday, Nov 25, at 1:30 PM LT for insider tips and expert advice from Fekede Alamayehu — former CPD member and now the Head of Education at A2SV!",
+
+      location: "B508, R10",
+      image: "ace-a2sv-interview-nov-2024.jpg",
     },
     {
-      title: "CTF Challenge: Cybersecurity Special",
-      date: "October 15, 2024",
-      location: "Innovation Lab, ASTU",
-      image: "zoro.png",
+      title: "🚀 Data Deep Dive: A Seminar with Meba",
+      date: "November 16, 2024",
+      description:
+        "Meba, our former member and CSEC ASTU executive, will walk us through her incredible journey in data science — from her Bachelor’s studies 🏫 to her Master’s in Data Science 🎓 and the real-world job market 💼.",
+      location: "Block 508, R10",
+      image: "data-deep-dive-nov-2024.jpg",
     },
     {
-      title: "AI and Ethics Seminar",
-      date: "September 30, 2024",
-      location: "Lecture Hall 2, ASTU",
-      image: "/zoro.png",
+      title: "Hack The Box Meetup: Adama, ET Edition",
+      date: "November 2, 2024",
+      description:
+        "We’re thrilled to invite you to an exclusive Hack The Box Meetup held in Adama City at ASTU Hosted by Hack The Box, in collaboration with Menas Cyber Solutions and CSEC ASTU Cybersecurity Division.",
+      location: "Block 508, R10",
+      image: "/hack-the-box-nov-2024.jpg",
+    },
+    {
+      title: "Eye-Opening Seminar on Data Science 101 with ZINDI! 📊✨",
+      date: "October 31, 2024",
+      description:
+        "Discover the World of Data Science, AI, and Machine Learning – Don’t miss this opportunity to learn the essentials and get your questions answered by experts from ZINDI! ",
+      location: "Block 508, R10",
+      image: "/data-science-seminar-oct-2024.jpg",
+    },
+    {
+      title: "Seminar with UI Expert Naol Chala! 🎨✨",
+      date: "October 24, 2024",
+      description:
+        "Level Up Your Design & UI Skills – Don't miss this chance to learn from the best! Naol Chala will be sharing pro tips, design insights, and best practices to take your UI skills to the next level.  ",
+      location: "Block 508, R10",
+      image: "/seminar-with-ui-expert-oct-2024.jpg",
     },
   ];
 
@@ -93,20 +118,23 @@ export default function EventsPage() {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="flex gap-5 bg-white rounded-lg shadow-md overflow-hidden"
+                className="flex max-md:flex-col gap-2 bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-2/5 h-full object-cover"
+                  className="w-2/5 max-md:w-full h-auto object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold text-blue-600 mb-2">
                     {event.title}
                   </h3>
                   <p className="text-gray-700 mb-2">{event.date}</p>
-                  <p className="text-gray-500 mb-2">{event.location}</p>
                   <p className="text-gray-600">{event.description}</p>
+                  <p className="text-gray-700 pt-2 mt-2 border-t mb-2 flex gap-2 items-center">
+                    <FaLocationDot />
+                    {event.location}
+                  </p>
                 </div>
               </div>
             ))}
@@ -122,19 +150,23 @@ export default function EventsPage() {
             {pastEvents.map((event, index) => (
               <div
                 key={index}
-                className="flex gap-5 bg-white rounded-lg shadow-md overflow-hidden"
+                className="flex max-md:flex-col gap-2 bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-2/5 h-auto object-cover"
+                  className="w-2/5 max-md:w-full h-auto object-cover"
                 />
-                <div className="p-6">
+                <div className="p-6 pt-3">
                   <h3 className="text-2xl font-semibold text-blue-600 mb-2">
                     {event.title}
                   </h3>
                   <p className="text-gray-700 mb-2">{event.date}</p>
-                  <p className="text-gray-500">{event.location}</p>
+                  <p className="text-gray-600">{event.description}</p>
+                  <p className="text-gray-700 pt-2 mt-2 border-t mb-2 flex gap-2 items-center">
+                    <FaLocationDot />
+                    {event.location}
+                  </p>
                 </div>
               </div>
             ))}
