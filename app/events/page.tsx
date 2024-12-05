@@ -86,7 +86,7 @@ export default function EventsPage() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         {/* Page Title */}
         <h1 className="text-4xl font-bold text-blue-600 text-center mb-10">

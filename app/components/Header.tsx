@@ -20,31 +20,40 @@ export default function Header() {
         <Image src="/csec-logo.jpg" width={40} height={40} alt="CSEC ASTU" />
       </div>
       <div className="flex gap-3 text-xl max-lg:hidden">
-        <Link href="/">
+        <Link href="/" className="hover:text-blue-600">
           <button>Home</button>
         </Link>
 
-        <Link href="/events">
+        <Link href="/events" className="hover:text-blue-600">
           <button>Events</button>
         </Link>
-        <Link href="teams">
+        <Link href="teams" className="hover:text-blue-600">
           <button>Executives</button>
         </Link>
-        <Link href="/sponsors">
+        <Link href="/sponsors" className="hover:text-blue-600">
           <button>Sponsors</button>
         </Link>
-        <Link href="/contact">
+        <Link href="/contact" className="hover:text-blue-600">
           <button>Contact Us</button>
         </Link>
       </div>
       <div className="flex gap-3 text-[#171717] max-md:hidden">
-        <a href="https://t.me/csec_astu">
+        <a
+          href="https://t.me/csec_astu"
+          target="_blank"
+          className="hover:text-blue-600"
+        >
           <FaTelegram size={24} />
+          className="hover:text-blue-600"
         </a>
-        <a href="https://t.me/csec_astu">
+        <a
+          href="https://t.me/csec_astu"
+          target="_blank"
+          className="hover:text-blue-600"
+        >
           <FaGithub size={24} />
         </a>
-        <a href="https://t.me/csec_astu">
+        <a href="https://t.me/csec_astu" target="_blank">
           <FaLinkedin size={24} />
         </a>
         <button className="border-l-2 pl-3">
@@ -74,30 +83,42 @@ export default function Header() {
         <div
           className={`flex flex-col -z-20 transition-all duration-700 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
         >
-          <Link href="/">
+          <Link href="/" className="hover:text-blue-600">
             <button>Home</button>
           </Link>
 
-          <Link href="/events">
+          <Link href="/events" className="hover:text-blue-600">
             <button>Events</button>
           </Link>
-          <Link href="teams">
+          <Link href="teams" className="hover:text-blue-600">
             <button>Executives</button>
           </Link>
-          <Link href="/sponsors">
+          <Link href="/sponsors" className="hover:text-blue-600">
             <button>Sponsors</button>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" className="hover:text-blue-600">
             <button>Contact Us</button>
           </Link>
           <div className="flex gap-3 text-[#171717] border-t mt-20 pt-5">
-            <a href="https://t.me/csec_astu">
+            <a
+              href="https://t.me/csec_astu"
+              target="_blank"
+              className="hover:text-blue-600"
+            >
               <FaTelegram size={24} />
             </a>
-            <a href="https://github.com/csec_astu">
+            <a
+              href="https://github.com/csec_astu"
+              target="_blank"
+              className="hover:text-blue-600"
+            >
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/company/csec_astu">
+            <a
+              href="https://linkedin.com/company/csec_astu"
+              target="_blank"
+              className="hover:text-blue-600"
+            >
               <FaLinkedin size={24} />
             </a>
             <button className="border-l-2 pl-3">
