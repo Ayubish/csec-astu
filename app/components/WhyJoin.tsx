@@ -68,22 +68,22 @@ export default function WhyJoin() {
         <div className="overflow-x-auto flex gap-4 snap-x snap-mandatory px-4">
           <div className="flex-shrink-0 w-80 p-6 bg-white rounded-lg shadow-lg snap-center">
             <p className="italic">
-              "CSEC ASTU has completely transformed my career journey. From the
-              hands-on contests to the supportive network, I feel empowered!"
+              CSEC ASTU has completely transformed my career journey. From the
+              hands-on contests to the supportive network, I feel empowered!
             </p>
             <p className="mt-4 font-semibold">- John Doe</p>
           </div>
           <div className="flex-shrink-0 w-80 p-6 bg-white rounded-lg shadow-lg snap-center">
             <p className="italic">
-              "I’ve gained invaluable experience, improved my skills, and built
-              meaningful connections."
+              I’ve gained invaluable experience, improved my skills, and built
+              meaningful connections.
             </p>
             <p className="mt-4 font-semibold">- Jane Smith</p>
           </div>
           <div className="flex-shrink-0 w-80 p-6 bg-white rounded-lg shadow-lg snap-center">
             <p className="italic">
-              "CSEC ASTU’s hackathons and leadership opportunities have taken my
-              growth to the next level."
+              CSEC ASTU’s hackathons and leadership opportunities have taken my
+              growth to the next level.
             </p>
             <p className="mt-4 font-semibold">- Alex Johnson</p>
           </div>

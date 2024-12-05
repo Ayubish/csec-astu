@@ -31,9 +31,9 @@ export default function About() {
             Our Mission
           </p>
           <p className="p-2">
-            "To inspire innovation, foster collaboration, and equip students
-            with the skills and knowledge needed to excel in the dynamic fields
-            of computer science and engineering."
+            To inspire innovation, foster collaboration, and equip students with
+            the skills and knowledge needed to excel in the dynamic fields of
+            computer science and engineering.
           </p>
         </div>
 
