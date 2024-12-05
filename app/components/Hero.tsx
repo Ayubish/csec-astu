@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex max-lg:flex-col gap-5 min-h-screen w-full grido pt-10 px-[7%] bg-[url('/battle-with-brain.jpg')] items-center justify-between ">
+    <div className="flex max-lg:flex-col max-lg:justify-center gap-5 min-h-screen w-full grido pt-10 px-[7%] bg-[url('/battle-with-brain.jpg')] items-center justify-between ">
       <div>
         <h1 className="text-6xl lg:text-8xl font-bold pt-10">
           <p>Think,</p>
