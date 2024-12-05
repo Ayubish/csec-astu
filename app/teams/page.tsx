@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { FaAngleLeft, FaAngleRight, FaChevronLeft } from "react-icons/fa6";
 
@@ -76,7 +77,9 @@ export default function TeamPage() {
               key={index}
               className="flex gap-5 bg-white rounded-lg shadow-md overflow-hidden p-2"
             >
-              <img
+              <Image
+                width={300}
+                height={300}
                 src={member.image}
                 alt={member.name}
                 className="w-32 h-32 rounded-full object-cover"
