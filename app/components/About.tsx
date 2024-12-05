@@ -3,11 +3,11 @@ import { GiBullseye, GiLightBulb } from "react-icons/gi";
 
 export default function About() {
   return (
-    <div className="px-[5%]">
+    <div className="p-[5%] bg-gradient-to-br from-black via-slate-400 to-stone-900">
       <div className="text-center">
-        <p className="relative inline-block mb-5 text-white text-2xl font-bold bg-[#fcc018]">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-10">
           Who We Are
-        </p>
+        </h2>
       </div>
       <p className="max-w-[900px] mx-auto">
         Computer Science and Engineering Club at ASTU (CSEC ASTU) is a
@@ -20,13 +20,13 @@ export default function About() {
 
       {/* Mission Vision and Values */}
       <div className="flex max-lg:flex-col justify-between gap-5 mt-5">
-        <div className="bg-[#fff] p-5 relative rounded-lg ">
-          <div className="p-1 rounded-full inline-block justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
+        <div className="bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] p-5 relative rounded-lg ">
+          <p className="p-1 rounded-full inline-block mx-auto justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
             <FaUsersGear
               size={50}
               className="text-center justify-self-center text-blue-500 bg-white rounded-full p-2"
             />
-          </div>
+          </p>
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Mission
           </p>
@@ -66,13 +66,6 @@ export default function About() {
             <br />
             <b>Excellence:</b> We strive for the highest standards in all that
             we do.
-            <br />
-            <b>Integrity:</b> We act with honesty and uphold strong ethical
-            principles.
-            <br />
-            <b>Diversity:</b> We value different perspectives and welcome
-            everyone with a passion for learning.
-            <br />
           </p>
         </div>
       </div>

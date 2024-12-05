@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaCalendarAlt, FaClock, FaHistory } from "react-icons/fa";
 import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
 
@@ -25,18 +26,19 @@ export default function EventsPage() {
     {
       title: "CTF Night",
       date: "December 09, 2024",
+      time: "07 :00 PM",
       location: "B508, R10, ASTU",
       description:
         "Are you ready to put your hacking skills to the test and solve the challenges? Join us for a CTF Night exclusively for all ASTU students! 🔐✨",
       image: "/ctf-night-dec-2024.jpg",
     },
-    {
-      title: "Data Science Bootcamp",
-      date: "January 20, 2025",
-      location: "Room 305, Computer Science Building",
-      description: "Learn the fundamentals of data analysis and visualization.",
-      image: "/zoro.png",
-    },
+    // {
+    //   title: "Data Science Bootcamp",
+    //   date: "January 20, 2025",
+    //   location: "Room 305, Computer Science Building",
+    //   description: "Learn the fundamentals of data analysis and visualization.",
+    //   image: "/zoro.png",
+    // },
   ];
 
   const pastEvents = [
@@ -46,8 +48,8 @@ export default function EventsPage() {
       description:
         "Join us this Monday, Nov 25, at 1:30 PM LT for insider tips and expert advice from Fekede Alamayehu — former CPD member and now the Head of Education at A2SV!",
 
-      location: "B508, R10",
-      image: "ace-a2sv-interview-nov-2024.jpg",
+      location: "Block 508, R10",
+      image: "/ace-a2sv-interview-nov-2024.jpg",
     },
     {
       title: "🚀 Data Deep Dive: A Seminar with Meba",
@@ -55,7 +57,7 @@ export default function EventsPage() {
       description:
         "Meba, our former member and CSEC ASTU executive, will walk us through her incredible journey in data science — from her Bachelor’s studies 🏫 to her Master’s in Data Science 🎓 and the real-world job market 💼.",
       location: "Block 508, R10",
-      image: "data-deep-dive-nov-2024.jpg",
+      image: "/data-deep-dive-nov-2024.jpg",
     },
     {
       title: "Hack The Box Meetup: Adama, ET Edition",
@@ -120,7 +122,9 @@ export default function EventsPage() {
                 key={index}
                 className="flex max-md:flex-col gap-2 bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   src={event.image}
                   alt={event.title}
                   className="w-2/5 max-md:w-full h-auto object-cover"
@@ -129,7 +133,9 @@ export default function EventsPage() {
                   <h3 className="text-2xl font-semibold text-blue-600 mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-gray-700 mb-2">{event.date}</p>
+                  <p className="text-gray-700 mb-2">
+                    {event.date}, {event.time}
+                  </p>
                   <p className="text-gray-600">{event.description}</p>
                   <p className="text-gray-700 pt-2 mt-2 border-t mb-2 flex gap-2 items-center">
                     <FaLocationDot />
@@ -152,7 +158,9 @@ export default function EventsPage() {
                 key={index}
                 className="flex max-md:flex-col gap-2 bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   src={event.image}
                   alt={event.title}
                   className="w-2/5 max-md:w-full h-auto object-cover"

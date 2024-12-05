@@ -72,7 +72,7 @@ export default function Header() {
         )}
 
         <div
-          className={`flex flex-col -z-20 transition-all duration-1000 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
+          className={`flex flex-col -z-20 transition-all duration-700 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
         >
           <Link href="/">
             <button>Home</button>
@@ -94,10 +94,10 @@ export default function Header() {
             <a href="https://t.me/csec_astu">
               <FaTelegram size={24} />
             </a>
-            <a href="https://t.me/csec_astu">
+            <a href="https://github.com/csec_astu">
               <FaGithub size={24} />
             </a>
-            <a href="https://t.me/csec_astu">
+            <a href="https://linkedin.com/company/csec_astu">
               <FaLinkedin size={24} />
             </a>
             <button className="border-l-2 pl-3">

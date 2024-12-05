@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaChevronLeft } from "react-icons/fa6";
 
 export default function TeamPage() {
   // Dummy data for team members
@@ -56,13 +57,18 @@ export default function TeamPage() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         {/* Page Title */}
         <h1 className="text-4xl font-bold text-blue-600 text-center mb-10">
           Our Executives
         </h1>
-
+        {/* Navigate year */}
+        <div className="flex p-3 max-w-96 justify-between items-center gap-10 justify-self-center text-xl">
+          <FaAngleLeft />
+          <p>2024/2025</p>
+          <FaAngleRight />
+        </div>
         {/* Team Members */}
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
