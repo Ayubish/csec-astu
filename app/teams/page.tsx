@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { FaAngleLeft, FaAngleRight, FaChevronLeft } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export default function TeamPage() {
   // Dummy data for team members
