@@ -13,7 +13,7 @@ import {
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [navHeight, setNavHeight] = useState("translate-x-96");
+  const [navHeight, setNavHeight] = useState("translate-x-96 hidden");
   return (
     <div className="flex w-full z-50 fixed left-0 right-0 top-0 justify-between items-center lg:px-14 px-5 py-4 bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] ">
       <div className="relative rounded w-2/5">
@@ -44,7 +44,6 @@ export default function Header() {
           className="hover:text-blue-600"
         >
           <FaTelegram size={24} />
-          className="hover:text-blue-600"
         </a>
         <a
           href="https://t.me/csec_astu"
@@ -53,7 +52,11 @@ export default function Header() {
         >
           <FaGithub size={24} />
         </a>
-        <a href="https://t.me/csec_astu" target="_blank">
+        <a
+          href="https://t.me/csec_astu"
+          target="_blank"
+          className="hover:text-blue-600"
+        >
           <FaLinkedin size={24} />
         </a>
         <button className="border-l-2 pl-3">
@@ -67,7 +70,7 @@ export default function Header() {
             size={24}
             onClick={() => {
               setMenuOpen(!menuOpen);
-              setNavHeight("translate-x-96");
+              setNavHeight("translate-x-96 hidden");
             }}
           />
         ) : (
@@ -75,13 +78,13 @@ export default function Header() {
             size={24}
             onClick={() => {
               setMenuOpen(!menuOpen);
-              setNavHeight("translate-x-0");
+              setNavHeight("flex translate-x-0");
             }}
           />
         )}
 
         <div
-          className={`flex flex-col -z-20 transition-all duration-700 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
+          className={`flex-col -z-20 transition-all duration-700 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
         >
           <Link href="/" className="hover:text-blue-600">
             <button>Home</button>

@@ -1,9 +1,8 @@
-
 export default function Hero() {
   return (
-    <div className="flex max-lg:flex-col min-h-screen w-full pt-10 p-[5%] bg-gradient-to-br from-green-500 to-blue-700 items-center justify-between ">
+    <div className="flex max-lg:flex-col min-h-screen w-full grido pt-10 p-[5%] bg-[url('/battle-with-brain.jpg')] items-center justify-between ">
       <div>
-        <h1 className="text-8xl font-bold grido p-10">
+        <h1 className="text-8xl font-bold p-10">
           <p>Think,</p>
           <p>Create,</p>
           <p className="relative px-3 bg-[#fcc018] box inline-block">Solve</p>
