@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaCalendarAlt, FaClock, FaHistory } from "react-icons/fa";
-import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function EventsPage() {
   // Dummy data for events

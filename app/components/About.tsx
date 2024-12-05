@@ -1,5 +1,5 @@
 import { FaHandshake, FaUsersGear } from "react-icons/fa6";
-import { GiBullseye, GiLightBulb } from "react-icons/gi";
+import { GiLightBulb } from "react-icons/gi";
 
 export default function About() {
   return (
