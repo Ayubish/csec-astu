@@ -22,12 +22,10 @@ export default function About() {
       {/* Mission Vision and Values */}
       <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-between gap-5 mt-5">
         <div className="bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] p-5 rounded-lg ">
-          <p className="p-1 rounded-full inline-block mx-auto text-center justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
-            <FaUsersGear
-              size={50}
-              className="text-center justify-self-center text-blue-500 bg-white rounded-full p-2"
-            />
-          </p>
+          <FaUsersGear
+            size={50}
+            className="text-center justify-self-center text-blue-500"
+          />
           <p className="border-b text-2xl py-3 font-bold text-center">
             Our Mission
           </p>

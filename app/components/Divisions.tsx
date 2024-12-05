@@ -69,7 +69,7 @@ export default function Divisions() {
               protection against cyber threats.
             </p>
             <a
-              href="/divisions/cybersecurity"
+              href="/"
               className="text-blue-600 hover:text-purple-600 mt-4 inline-block font-medium"
             >
               Learn More &rarr;
@@ -89,7 +89,7 @@ export default function Divisions() {
               derive meaningful insights and predictions.
             </p>
             <a
-              href="/divisions/data-science"
+              href="/"
               className="text-blue-600 hover:text-purple-600 mt-4 inline-block font-medium"
             >
               Learn More &rarr;
@@ -109,7 +109,7 @@ export default function Divisions() {
               and training in various tech fields.
             </p>
             <a
-              href="/divisions/capacity-building"
+              href="/"
               className="text-blue-600 hover:text-purple-600 mt-4 inline-block font-medium"
             >
               Learn More &rarr;
