@@ -3,12 +3,13 @@ import { GiLightBulb } from "react-icons/gi";
 
 export default function About() {
   return (
-    <div className="p-[5%] bg-gradient-to-br from-black via-slate-400 to-stone-900">
+    <div className="p-[5%]">
       <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-10">
+        <p className="text-3xl md:text-4xl font-bold text-blue-600 mb-10">
           Who We Are
-        </h2>
+        </p>
       </div>
+
       <p className="max-w-[900px] mx-auto">
         Computer Science and Engineering Club at ASTU (CSEC ASTU) is a
         student-driven intiative dedicated to advancing knowledge, fostering
@@ -19,9 +20,9 @@ export default function About() {
       </p>
 
       {/* Mission Vision and Values */}
-      <div className="flex max-lg:flex-col justify-between gap-5 mt-5">
-        <div className="bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] p-5 relative rounded-lg ">
-          <p className="p-1 rounded-full inline-block mx-auto justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
+      <div className="grid grid-cols-3 max-lg:grid-cols-1 justify-between gap-5 mt-5">
+        <div className="bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] p-5 rounded-lg ">
+          <p className="p-1 rounded-full inline-block mx-auto text-center justify-self-center bg-gradient-to-br from-purple-500 to-green-500">
             <FaUsersGear
               size={50}
               className="text-center justify-self-center text-blue-500 bg-white rounded-full p-2"
@@ -51,6 +52,7 @@ export default function About() {
             cybersecurity, data science, and development.
           </p>
         </div>
+
         <div className="bg-[#fff] p-5">
           <FaHandshake
             size={50}
