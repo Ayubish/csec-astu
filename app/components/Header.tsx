@@ -16,9 +16,9 @@ export default function Header() {
   const [navHeight, setNavHeight] = useState("translate-x-96 hidden");
   return (
     <div className="flex w-full z-50 fixed left-0 right-0 top-0 justify-between items-center lg:px-14 px-5 py-4 bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] ">
-      <div className="relative rounded w-2/5">
+      <Link className="relative rounded w-2/5" href="/">
         <Image src="/csec-logo.jpg" width={40} height={40} alt="CSEC ASTU" />
-      </div>
+      </Link>
       <div className="flex gap-3 text-xl max-lg:hidden">
         <Link href="/" className="hover:text-blue-600" >
           <button>Home</button>
@@ -86,20 +86,20 @@ export default function Header() {
         <div
           className={`flex-col -z-20 transition-all duration-700 pt-20 items-center absolute top-0 left-20 right-0 bottom-0 h-screen ${navHeight} bg-white bg-opacity-90 backdrop:blur-lg border border-[rgba(255,255,255, 0.8)] gap-3 text-xl`}
         >
-          <Link href="/" className="hover:text-blue-600" onClick={()=>setNavHeight(translate-x-0)}>
+          <Link href="/" className="hover:text-blue-600" onClick={()=>setNavHeight("translate-x-0")}>
             <button>Home</button>
           </Link>
 
-          <Link href="/events" className="hover:text-blue-600" onClick={()=>setNavHeight(translate-x-0)}>
+          <Link href="/events" className="hover:text-blue-600" onClick={()=>setNavHeight("translate-x-0")}>
             <button>Events</button>
           </Link>
-          <Link href="teams" className="hover:text-blue-600" onClick={()=>setNavHeight(translate-x-0)}>
+          <Link href="teams" className="hover:text-blue-600" onClick={()=>setNavHeight("translate-x-0")}>
             <button>Executives</button>
           </Link>
-          <Link href="/sponsors" className="hover:text-blue-600" onClick={()=>setNavHeight(translate-x-0)}>
+          <Link href="/sponsors" className="hover:text-blue-600" onClick={()=>setNavHeight("translate-x-0")}>
             <button>Sponsors</button>
           </Link>
-          <Link href="/contact" className="hover:text-blue-600" onClick={()=>setNavHeight(translate-x-0)}>
+          <Link href="/contact" className="hover:text-blue-600" onClick={()=>setNavHeight("translate-x-0")}>
             <button>Contact Us</button>
           </Link>
           <div className="flex gap-3 text-[#171717] border-t mt-20 pt-5">
