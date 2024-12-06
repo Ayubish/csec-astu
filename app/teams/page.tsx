@@ -10,8 +10,8 @@ export default function TeamPage() {
       role: "President",
       image: "/kiya-kebe-2024.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/john-doe",
-        github: "https://github.com/johndoe",
+        linkedin: "https://linkedin.com/in/kiyakebe",
+        github: "https://github.com/kiyakebe",
       },
     },
     {
@@ -19,8 +19,8 @@ export default function TeamPage() {
       role: "Vice President",
       image: "/nebiyu-musbah-2024.jpg",
       social: {
-        twitter: "https://twitter.com/janesmith",
-        linkedin: "https://linkedin.com/in/jane-smith",
+        github: "https://github.com/neba378",
+        linkedin: "https://linkedin.com/in/nebiyu-musbah",
       },
     },
     {
@@ -28,9 +28,9 @@ export default function TeamPage() {
       role: "Competetive Programming Dividion Head",
       image: "/abdi-esayas-2024.jpg",
       social: {
-        github: "https://github.com/alexjohnson",
-        linkedin: "https://linkedin.com/in/emily-carter",
-        twitter: "https://twitter.com/janesmith",
+        github: "https://github.com/abdiesu04",
+        linkedin: "https://linkedin.com/in/abdiesu04",
+        twitter: "https://twitter.com/abdiesu04",
       },
     },
     {
@@ -38,10 +38,10 @@ export default function TeamPage() {
       role: "Development Division Head",
       image: "/fasil-hawulite-2024.jpg",
       social: {
-        github: "https://github.com/alexjohnson",
-        twitter: "https://twitter.com/janesmith",
+        github: "https://github.com/fasill",
+        twitter: "https://twitter.com/fasilhawultie",
 
-        linkedin: "https://linkedin.com/in/emily-carter",
+        linkedin: "https://linkedin.com/in/fasil-hawultie",
       },
     },
     {
@@ -49,10 +49,8 @@ export default function TeamPage() {
       role: "Capacity Building Division Head",
       image: "/abdulaziz-isa-2024.jpg",
       social: {
-        github: "https://github.com/alexjohnson",
-        twitter: "https://twitter.com/janesmith",
-
-        linkedin: "https://linkedin.com/in/emily-carter",
+        github: "https://github.com/abdulaziz-isa",
+        linkedin: "https://www.linkedin.com/in/abdulaziz-isa-1696b027a",
       },
     },
   ];
