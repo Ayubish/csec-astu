@@ -13,7 +13,7 @@ import {
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navHeight = menuOpen?("translate-x-96 hidden"): "flex translate-x-0";
+  const navHeight = menuOpen? "flex translate-x-0" : ("translate-x-96 hidden");
   return (
     <div className="flex w-full z-50 fixed left-0 right-0 top-0 justify-between items-center lg:px-14 px-5 py-4 bg-white bg-opacity-70 backdrop:blur-lg border border-[rgba(255,255,255, 0.3)] ">
       <Link className="relative rounded w-2/5" href="/">
